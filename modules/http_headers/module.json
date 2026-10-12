@@ -1,0 +1,14 @@
+{
+  "api_version": 1,
+  "id": "http_headers",
+  "name": "HTTP header inspection",
+  "version": "1.0.0",
+  "description": "Send a single HTTP HEAD request and inspect response headers. Redirects are reported without following them.",
+  "category": "Web",
+  "entrypoint": "main.py",
+  "timeout_seconds": 20,
+  "inputs": [
+    {"key": "url", "label": "HTTP(S) URL", "type": "string", "required": true, "default": "https://example.com"},
+    {"key": "timeout", "label": "Request timeout (seconds, 1–15)", "type": "integer", "default": 10}
+  ]
+}

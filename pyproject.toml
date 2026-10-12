@@ -1,0 +1,9 @@
+[project]
+name = "pentest-toolkit"
+version = "0.1.0"
+description = "Windows-first modular desktop workspace for penetration testing"
+requires-python = ">=3.11"
+license = "MIT"
+
+[tool.ruff]
+line-length = 120

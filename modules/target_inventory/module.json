@@ -1,0 +1,14 @@
+{
+  "api_version": 1,
+  "id": "target_inventory",
+  "name": "Target inventory",
+  "version": "1.0.0",
+  "description": "Normalize hostnames, IP addresses, CIDR ranges and HTTP URLs into an inventory. Runs offline.",
+  "category": "Discovery",
+  "entrypoint": "main.py",
+  "timeout_seconds": 10,
+  "inputs": [
+    {"key": "targets", "label": "Targets (one per line)", "type": "string", "required": true,
+     "multiline": true, "default": "127.0.0.1\nhttps://example.com\n192.168.1.0/24"}
+  ]
+}

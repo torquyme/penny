@@ -1,0 +1,14 @@
+{
+  "api_version": 1,
+  "id": "dns_analysis",
+  "name": "DNS address analysis",
+  "version": "0.1.0",
+  "description": "Resolve up to 20 names to IPv4/IPv6 using the system resolver, with optional reverse lookups. Hosts-file results may be included; other DNS record types are not queried.",
+  "category": "Discovery",
+  "entrypoint": "main.py",
+  "timeout_seconds": 30,
+  "inputs": [
+    {"key": "hosts", "label": "Hostnames or IP addresses (one per line, maximum 20)", "type": "string", "required": true, "multiline": true, "default": "localhost"},
+    {"key": "reverse", "label": "Include reverse lookups (may send additional resolver queries)", "type": "boolean", "default": false}
+  ]
+}
